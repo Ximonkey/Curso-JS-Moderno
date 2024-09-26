@@ -15,7 +15,7 @@ function preguntarPresupuesto() {
 
     const presupuestoUsuario = prompt('Ingresa tu presupuesto');
 
-    if (presupuestoUsuario === null || presupuestoUsuario === '' || isNaN(presupuestoUsuario) || presupuesto >= 0) {
+    if (presupuestoUsuario === null || presupuestoUsuario === '' || isNaN(presupuestoUsuario) || presupuestoUsuario <= 0) {
         window.location.reload();
     }
     presupuesto = new Presupuesto(presupuestoUsuario);
